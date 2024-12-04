@@ -2347,6 +2347,23 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/* Responsive Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make iframe fill the container */
+    height: 100%; /* Maintain aspect ratio */
+}
+
 /* Image */
 
 	.image {
